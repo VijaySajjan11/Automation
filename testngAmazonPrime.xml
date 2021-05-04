@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AmazonPrime">
+<!-- Suite -->
+<listeners>
+<listener class-name="com.qa.utility.Reporting"/>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="Browser" value="chrome"/>
+
+<parameter name="Url" value="https://www.primevideo.com/ref=av_flex"/>
+    <classes>
+      <class name="com.qa.testscript3.TC_AmazonPrime"/>
+      <class name="com.qa.testscript.AmazonPrime"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> 
